@@ -1,36 +1,5 @@
 # JavaScript Interview Questions & Answers
 
-> Click :star:if you like the project and follow [@SudheerJonna](https://twitter.com/SudheerJonna) for more updates. Coding questions available [here](#coding-exercise). PDF and Epub versions available at [actions tab](https://github.com/sudheerj/JavaScript-Interview-Questions/actions).
-
----
-
-<p align="center">
-  <a href=https://zerotomastery.io/?utm_source=github&utm_medium=sponsor&utm_campaign=javascript-interview-questions>
-    <img src=https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=height:70/https://www.filepicker.io/api/file/AKYtjj5SSGyJuyZrkAB2 alt="ZTM Logo" width="100" height="50">
-  </a>
-  <p align="center">
-    <ol>
-    <li>Take this <a href=https://links.zerotomastery.io/jsp_sudheer>JavaScript Projects</a> course to go from a JS beginner to confidently building your own projects</li>
-    <li>Take this <a href=https://links.zerotomastery.io/mci_sudheer2>coding interview bootcamp</a> if you’re serious about getting hired and don’t have a CS degree</li>
-    <li>Take this <a href=https://links.zerotomastery.io/ajs_sudheer>Advanced JavaScript Course</a> to learn advanced JS concepts and become a top JS developer</li>
-    </ol>
-  </p>
-</p>
-
----
-
-<p align="center">
-  <a href=https://bit.ly/3Pf7EF9>
-    <img src="images/collab/codestudio-logo.svg" alt="Codestudio Logo">
-  </a>
-  <p align="center">
-    Explore the best free <a href=https://bit.ly/3Pf7EF9 target="_blank">resource</a> to learn JavaScript.
-    Build your own projects & earn a free certification in just 25 days.
-  </p>
-</p>
-
----
-
 ### Table of Contents
 
 | No. | Questions                                                                                                                                                         |
@@ -492,10 +461,10 @@
 
    1. **Object constructor:**
 
-      The simplest way to create an empty object is using the Object constructor. Currently this approach is not recommended.
+      Currently  not recommended.
 
       ```javascript
-      var object = new Object();
+      const object = new Object();
       ```
 
    2. **Object's create method:**
@@ -503,7 +472,7 @@
       The create method of Object creates a new object by passing the prototype object as a parameter
 
       ```javascript
-      var object = Object.create(null);
+      const object = Object.create(null);
       ```
 
    3. **Object literal syntax:**
@@ -511,12 +480,12 @@
       The object literal syntax (or object initializer), is a comma-separated set of name-value pairs wrapped in curly braces.
 
       ```javascript
-      var object = {
+      const obj = {};
+      
+      const object = {
            name: "Sudheer",
            age: 34
       };
-
-      Object literal property values can be of any data type, including array, function, and nested object.
       ```
 
       **Note:** This is an easiest way to create an object
@@ -530,8 +499,9 @@
         this.name = name;
         this.age = 21;
       }
-      var object = new Person("Sudheer");
+      const object = new Person("Sudheer");
       ```
+      NOTE: Arrow functions do not 
 
    5. **Function constructor with prototype:**
 
